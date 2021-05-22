@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "https://example.com/rootArrayOfObject",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/MyObject"
+  },
+  "definitions": {
+    "MyObject": {
+      "type": "object",
+      "required": ["myString"],
+      "properties": {
+        "myString": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
